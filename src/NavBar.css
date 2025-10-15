@@ -2,59 +2,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 80px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.navbar-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.navbar-logo img {
-  width: 40px;
-  height: 40px;
-}
-
-.navbar-logo h2 {
-  color: #2e7d32;
+  background-color: #0b3d91;
+  color: white;
+  padding: 15px 40px;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .nav-links {
-  display: flex;
-  gap: 40px;
   list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
 .nav-links a:hover {
-  color: #4caf50;
-}
-
-.login-btn {
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.login-btn:hover {
-  background-color: #388e3c;
+  color: #ffcc00;
 }
