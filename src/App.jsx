@@ -1,17 +1,19 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
+import HomePage from "./components/HomePage";
 import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Navbar />
-      <h1 style={{ textAlign: "center", marginTop: "50px" }}>
-        Welcome to Web Travel Planner 🌍
-      </h1>
-      <p style={{ textAlign: "center" }}>
-        Plan your trips easily, explore destinations, and travel smarter!
-      </p>
+      <HomePage />
+      <main className="content">
+        <section className="hero">
+          <h1></h1>
+          <p>Plan your dream trip easily and explore amazing destinations worldwide!</p>
+        </section>
+      </main>
     </div>
   );
 }
