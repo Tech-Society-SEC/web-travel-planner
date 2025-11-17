@@ -1,30 +1,80 @@
-import React from 'react'
+import React, { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
+function Signup() {
+  const navigate = useNavigate();
 
-export default function Signup(){
-return (
-<div className="auth-page">
-<div className="auth-card">
-<div className="tabs">
-<a className="tab">Login</a>
-<div className="tab active">Sign Up</div>
-</div>
-<h3>Create Your Account</h3>
-<p>Join our sustainable travel community</p>
-<label>Username</label>
-<input placeholder="Choose a username" />
-<label>Email</label>
-<input placeholder="your.email@example.com" />
-<label>Password</label>
-<input placeholder="Create a strong password" />
-<label>Confirm Password</label>
-<input placeholder="Confirm your password" />
-<label>Location</label>
-<input placeholder="City, Country" />
-<label>Phone Number</label>
-<input placeholder="+1 (555) 123-4567" />
-<button className="btn-primary">Sign Up</button>
-</div>
-</div>
-)
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await axios.post("http://localhost:5000/api/auth/signup", formData);
+
+      if (res.data.success) {
+        alert("Account created successfully!");
+        navigate("/login");
+      } else {
+        alert(res.data.message);
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Signup failed!");
+    }
+  };
+
+  return (
+    <div className="login-container">
+      <h2>Create Account</h2>
+
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter full name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Create password"
+          value={formData.password}
+          onChange={handleChange}
+          required
+        />
+
+        <button type="submit">Signup</button>
+      </form>
+
+      <p>
+        Already have an account?{" "}
+        <span onClick={() => navigate("/login")} style={{ color: "blue", cursor: "pointer" }}>
+          Login
+        </span>
+      </p>
+    </div>
+  );
 }
+
+export default Signup;

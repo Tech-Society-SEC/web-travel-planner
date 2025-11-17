@@ -10,6 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.13.2",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.5"
@@ -25,7 +31,21 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.4.0",
+    "nodemon": "^3.1.11",
     "prettier": "^3.6.2",
     "vite": "^7.1.7"
-  }
+  },
+  "description": "PROJECT PROPOSAL:\r Web Travel Planner -Ecofriendly  is a current interactive web application which is intended to assist the user in making ecological friendly trip plans in an easy and responsible manner. It uses React.js, HTML, CSS, and JavaScript as a platform and a focus on a nature-oriented and clean responsive interface.This project aims at offering individual, couple, family and group travelers an easy means of exploring environmentally friendly destinations, designing their own customized itineraries and understanding the concept of eco-friendly traveling.\r The project reflects the ability of front-end development and the skill of UI/UX design through the combination of intuitive design, reusability, and the use of natural colors.",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tech-Society-SEC/web-travel-planner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tech-Society-SEC/web-travel-planner/issues"
+  },
+  "homepage": "https://github.com/Tech-Society-SEC/web-travel-planner#readme"
 }

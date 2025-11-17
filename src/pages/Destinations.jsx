@@ -3,9 +3,9 @@ import DestinationCard from '../components/DestinationCard'
 
 
 const sample = [
-{name:'Indonesia', desc:'Discover sustainable island paradises and eco-friendly resorts', image:'/src/assets/hero-bg.jpg'},
-{name:'New Zealand', desc:'Adventure through pristine landscapes with eco-conscious tourism', image:'/src/assets/hero-bg.jpg'},
-{name:'Chile', desc:'Explore Patagonian wilderness with sustainable lodges', image:'/src/assets/hero-bg.jpg'},
+{name:'Indonesia', desc:'Discover sustainable island paradises and eco-friendly resorts', image:'/src/assets/Indonesia.png'},
+{name:'New Zealand', desc:'Adventure through pristine landscapes with eco-conscious tourism', image:'/src/assets/Newzeland.png'},
+{name:'Chile', desc:'Explore Patagonian wilderness with sustainable lodges', image:'/src/assets/Chile.png'},
 ]
 
 
