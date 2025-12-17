@@ -1,0 +1,21 @@
+/* Path: src/styles/index.css
+   Purpose: Basic Tailwind + font import instructions.
+   If you're using Tailwind, ensure tailwind directives are present.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --primary: #4CAF50;
+  --dark-green: #2E7D32;
+  --beige: #EFE9E1;
+}
+
+html,body,#root { height: 100%; }
+
+body {
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--beige);
+}
+
+/* If using Tailwind, keep tailwind base/utilities in project.
+   This file is a minimal fallback when not using Tailwind. */
